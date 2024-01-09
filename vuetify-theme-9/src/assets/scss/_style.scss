@@ -1,0 +1,1267 @@
+// General CSS
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: $grey;
+}
+
+body {
+  font-family: "Urbanist", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  background-color: $body-bg;
+  color: $primar-text;
+}
+h4 {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: $primar-text;
+}
+h5 {
+  font-size: 20px;
+  line-height: 24px;
+}
+h6 {
+  font-size: 18px;
+  line-height: 22px;
+  color: $primar-text;
+}
+.main-content {
+  min-height: 100vh;
+  padding: 104px 32px 32px 264px;
+  transition: all 0.3s;
+  position: relative;
+}
+.card-heading {
+  font-weight: 600;
+}
+.section-heading {
+  font-weight: 600;
+}
+.primary-link {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  color: $primary;
+  position: relative;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.primary-link::after {
+  content: "";
+  position: absolute;
+  left: -100%;
+  bottom: 0;
+  height: 1px;
+  background-color: $primary;
+  width: 100%;
+  transition: all 0.3s;
+}
+.primary-link:hover,
+.primary-link:focus {
+  color: $primary;
+  &::after {
+    left: 0;
+  }
+}
+.custom-ripple {
+  background-color: rgba($color: $primary, $alpha: 0.05);
+}
+// Button CSS
+.v-btn--size-large {
+  --v-btn-height: 48px;
+  --v-btn-size: 18px;
+}
+.v-btn {
+  text-transform: capitalize;
+  letter-spacing: 0;
+  line-height: 22px;
+  font-weight: 600;
+  &.v-btn--variant-plain {
+    opacity: 1;
+  }
+  &.v-btn--size-large {
+    padding: 0 16px;
+  }
+}
+
+// Checkbox CSS
+.v-checkbox {
+  margin-left: -6px;
+  .v-selection-control {
+    --v-input-control-height: auto;
+    .v-label {
+      padding-left: 2px;
+    }
+  }
+  .v-selection-control__input {
+    color: $primary;
+  }
+  .v-selection-control__input > .v-icon {
+    opacity: 1;
+  }
+}
+.v-checkbox-btn {
+  .v-icon {
+    height: 16px;
+    width: 16px;
+    min-width: 16px;
+    transition: all 0.3s;
+    &::before {
+      display: none;
+    }
+    &.mdi-checkbox-blank-outline {
+      background: url("@/assets/imgs/checkbox-default-icon.svg") center
+        no-repeat;
+      background-size: cover;
+    }
+    &.mdi-checkbox-marked {
+      background: url("@/assets/imgs/checkbox-checked-icon.svg") center
+        no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+// Radio Button CSS
+.v-radio-group {
+  margin-left: -4px;
+  .v-selection-control-group {
+    gap: 20px;
+  }
+  .v-selection-control {
+    .v-label {
+      padding-left: 4px;
+    }
+  }
+  .v-selection-control__input {
+    color: $primary;
+    > .v-icon {
+      --v-medium-emphasis-opacity: 1;
+      height: 20px;
+      width: 20px;
+      min-width: 20px;
+      color: $grey;
+      &::before {
+        font-size: 20px;
+      }
+      &.mdi-radiobox-marked {
+        color: $primary;
+      }
+    }
+  }
+}
+
+// Alert CSS
+.v-alert {
+  font-weight: 500;
+  &.v-alert--variant-outlined {
+    padding: 7px 20px;
+    .v-icon {
+      &::before {
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+    .v-alert__close {
+      margin-right: -8px;
+    }
+  }
+  &.text-success {
+    .mdi-close {
+      color: $success;
+    }
+  }
+  &.text-info {
+    .mdi-close {
+      color: $info;
+    }
+  }
+  &.text-warning {
+    .mdi-close {
+      color: $warning;
+    }
+  }
+  &.text-error {
+    .mdi-close {
+      color: $error;
+    }
+  }
+}
+
+// Form Control CSS
+.v-input {
+  line-height: 20px;
+  &.password-field {
+    .v-icon {
+      &.mdi-eye-outline {
+        background: url("@/assets/imgs/show-password-icon.svg") center no-repeat;
+        background-size: cover;
+      }
+      &.mdi-eye-off-outline {
+        background: url("@/assets/imgs/hide-password-icon.svg") center no-repeat;
+        background-size: cover;
+      }
+      &::before {
+        display: none;
+      }
+    }
+  }
+  .v-label {
+    color: $primar-text;
+    --v-medium-emphasis-opacity: 1;
+    letter-spacing: 0;
+  }
+  &.v-input--error {
+    font-size: 12px;
+    line-height: 20px;
+    &.v-input {
+      .v-field__outline__start,
+      .v-field__outline__end {
+        border-color: $control-error;
+      }
+    }
+    .v-field {
+      &:hover {
+        .v-field__outline__start,
+        .v-field__outline__end {
+          border-color: $control-error;
+        }
+      }
+      &.v-field--focused {
+        .v-field__outline__start,
+        .v-field__outline__end {
+          border-color: $control-error;
+        }
+      }
+    }
+  }
+  .v-messages__message,
+  .v-messages {
+    line-height: 20px;
+  }
+  .v-messages {
+    min-height: 20px;
+  }
+  .v-input__details {
+    padding: 4px 0 0;
+  }
+}
+.form-group {
+  label {
+    font-size: 14px;
+    line-height: 18px;
+    color: $primar-text;
+    padding-bottom: 4px;
+    display: block;
+  }
+  .v-field {
+    border-radius: 8px;
+    &.v-field--focused {
+      .v-field__outline__start,
+      .v-field__outline__end {
+        border-color: $primary;
+      }
+    }
+    &:hover {
+      .v-field__outline__start,
+      .v-field__outline__end {
+        border-color: $primary;
+      }
+    }
+    .v-field__outline__start,
+    .v-field__outline__end {
+      border-color: $grey;
+      transition: all 0.3s;
+    }
+  }
+  .v-field__outline {
+    --v-field-border-opacity: 1;
+  }
+  .v-field__input {
+    min-height: auto;
+    padding: 14px 12px;
+    color: $primar-text;
+    letter-spacing: 0;
+    &::placeholder {
+      opacity: 1;
+    }
+  }
+
+  .v-field__append-inner {
+    .v-icon {
+      height: 20px;
+      width: 20px;
+      min-width: 20px;
+      opacity: 1;
+      &::before {
+        font-size: 20px;
+      }
+      &.v-select__menu-icon {
+        color: $primar-text;
+        &::before {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+  .v-select {
+    .v-field {
+      .v-field__input {
+        > input {
+          position: static;
+        }
+      }
+    }
+  }
+}
+
+// File Upload CSS
+.file-upload-outer {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding-bottom: 32px;
+  p {
+    padding-bottom: 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: $primar-text;
+  }
+}
+.upload-btn {
+  background-color: $primary;
+  color: $white;
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  height: 48px;
+  width: 120px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  transition: all 0.3s;
+  position: relative;
+  input {
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    cursor: pointer;
+    opacity: 0;
+  }
+  &:hover {
+    background-color: $primary-v-1;
+  }
+}
+
+// Tab CSS
+.v-tabs {
+  padding-bottom: 16px;
+  &.v-tabs--density-default {
+    height: auto;
+  }
+  .v-tab {
+    &.v-btn {
+      font-size: 16px;
+      line-height: 20px;
+      font-weight: 400;
+      color: $primary;
+      min-width: auto;
+      border-radius: 4px !important;
+    }
+    .v-tab__slider {
+      display: none;
+    }
+  }
+}
+.v-window {
+  .v-window-item {
+    color: $primar-text;
+    p {
+      &:last-child {
+        padding-bottom: 0;
+      }
+    }
+  }
+}
+
+// Menu CSS
+.v-list {
+  .v-list-item {
+    > .v-list-item__overlay {
+      background-color: $primary;
+    }
+    &.v-list-item--active {
+      color: $primary;
+      background-color: rgba($color: $primary, $alpha: 0.05);
+    }
+    &:hover {
+      background-color: rgba($color: $primary, $alpha: 0.05);
+      .v-list-item__overlay {
+        opacity: 0;
+      }
+    }
+    &:focus-visible::after {
+      opacity: 0;
+    }
+    .v-ripple__container {
+      color: rgba($color: $primary, $alpha: 0.15);
+    }
+  }
+}
+
+// Login CSS
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  img {
+    display: block;
+  }
+}
+.login-wrapper {
+  min-height: 100vh;
+  background-color: $login-bg;
+  padding: 20px 80px;
+  display: flex;
+  align-items: center;
+  .shape {
+    position: absolute;
+  }
+  .right-shape {
+    right: 0;
+    top: 0;
+  }
+  .left-shape {
+    left: 0;
+    bottom: 0;
+  }
+  .login-card {
+    position: relative;
+    background-color: $white;
+    border-radius: 20px;
+    padding: 84px 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    min-height: calc(100vh - 160px);
+    width: 100%;
+    .login-banner {
+      img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+  }
+  .login-form {
+    text-align: center;
+    max-width: 380px;
+    width: 100%;
+    .login-logo {
+      display: inline-block;
+      vertical-align: middle;
+      margin-bottom: 30px;
+      img {
+        display: block;
+      }
+    }
+    h4 {
+      font-weight: 600;
+      padding-bottom: 4px;
+    }
+    .sub-info {
+      font-size: 14px;
+      line-height: 18px;
+      padding-bottom: 30px;
+    }
+    .form-group {
+      text-align: left;
+    }
+    .action-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .sign-up-text {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 4px;
+    }
+  }
+}
+
+// Sidebar CSS
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: $white;
+  width: 232px;
+  transition: all 0.3s;
+  box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.1);
+  .logo {
+    padding: 16px;
+    width: 100%;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    height: calc(100vh - 96px);
+    overflow: auto;
+    .nav-item {
+      width: 100%;
+    }
+    .icon-block {
+      height: 24px;
+      width: 24px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      img {
+        position: relative;
+        transition: all 0.3s;
+        &:last-child {
+          top: -24px;
+          opacity: 0;
+          visibility: hidden;
+          transform: scale(0);
+        }
+      }
+    }
+    .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: 500;
+      color: $primary-shade-1;
+      height: 44px;
+      padding: 8px 12px;
+      position: relative;
+      border-left: 2px solid transparent;
+      transition: all 0.3s;
+      &.router-link-active {
+        border-color: $primary;
+        background-color: rgba($color: $primary, $alpha: 0.1);
+      }
+      &.router-link-active,
+      &:hover,
+      &:focus {
+        font-weight: 600;
+        color: $primary;
+        .icon-block {
+          img {
+            &:first-child {
+              opacity: 0;
+              visibility: hidden;
+              transform: scale(0);
+            }
+            &:last-child {
+              opacity: 1;
+              visibility: visible;
+              height: 24px;
+              width: 24px;
+              transform: scale(1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+// Header CSS
+.header {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 232px;
+  background-color: $white;
+  display: flex;
+  align-items: center;
+  padding: 8px 32px;
+  z-index: 1;
+  transition: all 0.3s;
+  box-shadow: 5px 0 8px 1px rgba($color: $black, $alpha: 0.1);
+  .btn-menu {
+    margin-left: -16px;
+    &:hover {
+      background-color: $icon-hover;
+    }
+  }
+  .mdi-magnify {
+    height: 20px;
+    width: 20px;
+    min-width: 20px;
+    background: url("@/assets/imgs/search-icon.svg") center no-repeat;
+    background-size: cover;
+    opacity: 1;
+    &::before {
+      display: none;
+    }
+  }
+  .v-autocomplete {
+    max-width: 500px;
+    width: 100%;
+    margin-right: auto;
+    .v-field__input {
+      letter-spacing: 0;
+      opacity: 1;
+      padding-left: 8px;
+      &::placeholder {
+        opacity: 1;
+      }
+    }
+    .v-field--variant-solo-inverted {
+      color: $search-text;
+      --v-disabled-opacity: 1;
+    }
+    .v-field--variant-solo-inverted {
+      box-shadow: none;
+      &.v-field--focused {
+        .v-field__overlay {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  .notification-btn {
+    &:hover {
+      background-color: $icon-hover;
+    }
+    .v-btn__content {
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        top: 1px;
+        right: 1px;
+        height: 9px;
+        width: 9px;
+        background-color: $control-error;
+        border: 1px solid $white;
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+// Notification Menu CSS
+.v-overlay-container {
+  .v-menu {
+    > .v-overlay__content {
+      border-radius: 10px;
+      > .v-list {
+        box-shadow: 0px 6px 12px 0px rgba(0, 0, 0, 0.06);
+      }
+    }
+  }
+}
+.notification-menu {
+  .notification-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    justify-content: space-between;
+    padding-bottom: 4px;
+    h6 {
+      font-weight: 600;
+    }
+    .v-btn--icon {
+      margin: -8px -8px -8px 0;
+    }
+  }
+  &.v-menu {
+    > .v-overlay__content {
+      width: 337px;
+      > .v-list {
+        padding: 20px 20px 7px;
+        overflow: visible;
+        .v-list-item {
+          padding: 0;
+        }
+      }
+    }
+  }
+  .notification-content {
+    max-height: 300px;
+    overflow: auto;
+    margin: 0 -20px;
+    .v-list-item {
+      min-height: auto;
+      margin: 0 20px;
+    }
+    .v-list-item__content {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 10px 8px 9px;
+      border-bottom: 1px solid $grey;
+      p {
+        padding-bottom: 0;
+        font-size: 14px;
+        line-height: 18px;
+        color: $primar-text;
+      }
+      .time {
+        font-weight: 500;
+        min-width: 60px;
+        text-align: right;
+      }
+    }
+  }
+  .footer-link {
+    color: $primary;
+    text-align: center;
+    font-weight: 500;
+    min-height: 40px !important;
+    margin-top: 7px;
+  }
+}
+
+// User Profile Menu
+.profile-btn {
+  &.v-btn {
+    font-weight: 400;
+    text-align: left;
+    padding: 8px;
+    height: auto;
+    margin-right: -8px;
+  }
+  .profile-down-icon {
+    transition: all 0.3s;
+  }
+  &[aria-expanded="true"] {
+    .profile-down-icon {
+      transform: rotate(180deg);
+    }
+  }
+  .v-btn__content {
+    gap: 10px;
+  }
+  p {
+    padding-bottom: 0;
+  }
+  .department {
+    font-size: 14px;
+    line-height: 18px;
+    color: $primar-text;
+  }
+  .name {
+    font-weight: 500;
+    color: $primar-text;
+  }
+}
+.profile-menu {
+  .v-list {
+    padding: 10px 0;
+  }
+  .v-list-item__content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    p {
+      padding-bottom: 0;
+    }
+  }
+  .v-list-item.v-list-item--link {
+    min-height: 44px;
+    padding: 4px 12px !important;
+    color: $primar-text !important;
+  }
+}
+
+// Innerpage CSS
+.v-card {
+  &.page-card {
+    padding: 20px;
+    box-shadow: 0px 0px 16px 0px rgba(25, 34, 60, 0.1);
+    border-radius: 10px;
+  }
+}
+
+// Dashboard CSS
+.statistic-card {
+  &.v-card {
+    box-shadow: 0px 0px 16px 0px rgba(25, 34, 60, 0.1);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 28px 20px;
+    overflow: hidden;
+    .icon-block {
+      height: 48px;
+      width: 48px;
+      min-width: 48px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      &.purple {
+        background-color: $statistic-purple-bg;
+      }
+      &.blue {
+        background-color: $statistic-blue-bg;
+      }
+      &.orange {
+        background-color: $statistic-orange-bg;
+      }
+      &.green {
+        background-color: $statistic-green-bg;
+      }
+    }
+    p {
+      padding-bottom: 0;
+    }
+    .label {
+      font-size: 16px;
+      line-height: 20px;
+      color: $label;
+      padding-bottom: 4px;
+      white-space: nowrap;
+    }
+    .value {
+      font-size: 24px;
+      line-height: 28px;
+      color: $primar-text;
+      font-weight: 700;
+    }
+    .growth-text {
+      margin-left: auto;
+      align-self: flex-end;
+      font-size: 18px;
+      line-height: 22px;
+      font-weight: 600;
+    }
+    .decrease {
+      color: $control-error;
+    }
+    .increase {
+      color: $value-increase;
+    }
+  }
+}
+.common-card {
+  &.v-card {
+    border-radius: 10px;
+    box-shadow: 0px 0px 16px 0px rgba(25, 34, 60, 0.1);
+    padding: 20px;
+    height: 100%;
+    .card-header {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: space-between;
+      h5 {
+        padding-bottom: 0;
+      }
+    }
+    .v-field--variant-outlined {
+      .v-field__outline__notch::before,
+      .v-field__outline__notch::after {
+        border-color: $grey;
+        transition: all 0.3s;
+      }
+    }
+    .v-input {
+      min-width: 94px;
+    }
+    .v-field {
+      font-size: 12px;
+      line-height: 18px;
+      &:hover {
+        .v-field__outline__notch::before,
+        .v-field__outline__notch::after {
+          border-color: $primary;
+        }
+      }
+      &.v-field--focused {
+        .v-field__outline__notch::before,
+        .v-field__outline__notch::after {
+          border-color: $primary;
+        }
+      }
+      &.v-field--appended {
+        padding-right: 10px;
+      }
+      .v-label {
+        font-size: 12px;
+        line-height: 18px;
+        padding-bottom: 0;
+        margin-right: 0;
+        margin-left: 10px;
+        &.v-field-label--floating {
+          margin: 0 4px;
+          font-size: 9px;
+        }
+      }
+      .v-field__input {
+        padding: 9px 0 9px 10px;
+        opacity: 1;
+      }
+    }
+  }
+  &.report-chart {
+    .card-header {
+      padding-bottom: 12px;
+    }
+  }
+  &.car-rent-chart {
+    .card-header {
+      padding-bottom: 32px;
+    }
+    .card-body {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 22px;
+      min-width: 138px;
+      li {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        width: 100%;
+      }
+      p {
+        padding-bottom: 0;
+      }
+      .legend-label {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 500;
+        color: $primary-shade-1;
+      }
+      .color-block {
+        height: 12px;
+        width: 12px;
+        border-radius: 50%;
+        display: block;
+        &.bg-1 {
+          background-color: $blue-1;
+        }
+        &.bg-2 {
+          background-color: $blue-2;
+        }
+        &.bg-3 {
+          background-color: $primary;
+        }
+        &.bg-4 {
+          background-color: $blue-3;
+        }
+        &.bg-5 {
+          background-color: $blue-4;
+        }
+      }
+      .value {
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 600;
+        color: $primar-text;
+        margin-left: auto;
+      }
+    }
+  }
+}
+.table-card {
+  .card-header {
+    .v-btn {
+      border-color: $grey;
+      color: $primar-text !important;
+      font-size: 12px;
+      line-height: 16px;
+      padding: 8px 9px;
+      height: 36px;
+      min-width: auto;
+      .v-btn__content {
+        gap: 8px;
+      }
+    }
+  }
+}
+.transaction-card {
+  .card-header {
+    .v-btn {
+      height: 36px;
+      padding: 8px 9px;
+      font-size: 12px;
+      line-height: 16px;
+      min-width: auto;
+    }
+  }
+  .transaction-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    .transaction-list-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      width: 100%;
+      border-bottom: 1px solid rgba($color: $primary-shade-1, $alpha: 0.2);
+      p {
+        padding-bottom: 0;
+      }
+      .brand-name {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 500;
+        color: $primar-text;
+        padding-bottom: 4px;
+      }
+      .car-type {
+        font-size: 12px;
+        line-height: 16px;
+        color: $primary-shade-1;
+      }
+      .date {
+        font-size: 12px;
+        line-height: 16px;
+        color: $primary-shade-1;
+        font-weight: 500;
+        padding-bottom: 4px;
+      }
+      .value {
+        font-size: 18px;
+        line-height: 22px;
+        color: $primar-text;
+        font-weight: 700;
+      }
+      .car-value {
+        margin-left: auto;
+        text-align: right;
+      }
+    }
+  }
+}
+.footer {
+  text-align: right;
+  padding-top: 20px;
+  p {
+    padding-bottom: 0;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+}
+.open-sidebar {
+  .sidebar {
+    left: -232px;
+  }
+  .header {
+    left: 0;
+  }
+  .main-content {
+    padding-left: 32px;
+  }
+}
+.sidebar-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba($color: $black, $alpha: 0.2);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1;
+  transition: all 0.3s;
+}
+// Responsive Media Query
+@media (max-width: 1399px) {
+  .main-content {
+    padding: 92px 20px 20px 252px;
+  }
+  .header {
+    padding: 8px 20px;
+  }
+  .statistic-card {
+    &.v-card {
+      padding: 24px 16px;
+      gap: 8px;
+      .growth-text {
+        font-size: 16px;
+        line-height: 20px;
+      }
+    }
+  }
+  .page-heading {
+    padding-bottom: 16px;
+  }
+  .common-card.car-rent-chart {
+    .card-body {
+      flex-direction: column;
+      gap: 20px;
+    }
+    ul {
+      gap: 16px;
+    }
+  }
+  .login-wrapper {
+    padding: 20px;
+    .login-card {
+      padding: 80px;
+    }
+  }
+}
+@media (max-width: 1279px) {
+  .sidebar {
+    left: -252px;
+    z-index: 1;
+  }
+  .header {
+    left: 0;
+  }
+  .main-content {
+    padding-left: 20px !important;
+  }
+  .statistic-card {
+    &.v-card {
+      padding: 16px;
+    }
+  }
+  .open-sidebar {
+    overflow: hidden;
+    .sidebar {
+      left: 0;
+    }
+    .sidebar-overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .common-card.car-rent-chart {
+    .card-header {
+      padding-bottom: 20px;
+    }
+    .card-body {
+      flex-direction: row;
+      gap: 16px;
+    }
+  }
+  .login-wrapper {
+    .login-card {
+      padding: 40px;
+    }
+  }
+}
+@media (max-width: 959px) {
+  .section-heading {
+    padding-bottom: 12px;
+  }
+  .login-wrapper {
+    .login-card {
+      flex-direction: column;
+      gap: 40px;
+    }
+    .shape {
+      height: 60px;
+      width: 60px;
+    }
+    .login-form {
+      .login-logo {
+        margin-bottom: 20px;
+      }
+      .sub-info {
+        padding-bottom: 20px;
+      }
+    }
+  }
+  .common-card.v-card {
+    padding: 16px;
+  }
+}
+@media (max-width: 599px) {
+  .v-card.page-card {
+    padding: 16px;
+  }
+  .search-overlay {
+    position: fixed;
+    inset: 0;
+    background-color: rgba($color: $black, $alpha: 0.2);
+    z-index: 1;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s;
+  }
+  .header {
+    .v-autocomplete {
+      position: fixed;
+      top: -100%;
+      left: 16px;
+      border-radius: 4px;
+      width: calc(100% - 32px);
+      z-index: 1;
+      transition: all 0.3s;
+    }
+  }
+  .open-search {
+    overflow: hidden;
+    .search-overlay {
+      opacity: 1;
+      visibility: visible;
+    }
+    .v-autocomplete {
+      top: 20%;
+    }
+  }
+  .sm-search-btn {
+    margin-left: auto;
+    img {
+      height: 20px;
+      width: 20px;
+    }
+  }
+  .profile-btn {
+    &.v-btn {
+      min-width: auto;
+      border-radius: 50% !important;
+      .profile-content {
+        display: none;
+        + img {
+          display: none;
+        }
+      }
+    }
+  }
+  .profile-menu {
+    .v-list {
+      min-width: 200px;
+    }
+  }
+  .common-card.car-rent-chart {
+    .card-body {
+      flex-direction: column;
+    }
+  }
+  .login-wrapper {
+    .login-card {
+      gap: 20px;
+      padding: 40px 20px;
+    }
+    .shape {
+      height: 50px;
+      width: 50px;
+    }
+  }
+}
