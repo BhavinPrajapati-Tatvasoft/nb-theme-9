@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Dashboard | ds-theme-18</title>
+    <title>Dashboard | nb-theme-9</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
@@ -16,181 +16,216 @@
     <div class="wrapper">
         <!-- Header Start -->
         <header class="header">
-            <div class="header-inner">
-                <button type="button" class="btn icon-btn menu-btn d-inline-block d-xxl-none">
-                    <img src="images/menu-icon.svg" alt="Menu" />
+            <button type="button" class="btn icon-btn menu-btn">
+                <img src="images/menu-icon.svg" alt="Menu" />
+            </button>
+            <div class="search-wrapper">
+                <button type="button" class="btn icon-btn">
+                    <img src="images/search-icon.svg" alt="Search">
                 </button>
-                <a href="#" title="Logo" class="d-xxl-none d-inline-block logo">
-                    <img src="images/mobile-logo.svg" alt="Smart Track" />
-                </a>
-                <div class="search-wrapper">
-                    <input type="text" class="form-control" placeholder="Search here.." id="searchbox" />
-                    <button type="button" class="btn icon-btn">
-                        <img src="images/search-icon.svg" alt="Search">
-                    </button>
-                </div>
-                <div class="action-row">
-                    <button type="button" class="btn icon-btn d-inline-block d-md-none search-btn">
-                        <img src="images/search-icon.svg" alt="Search" />
-                    </button>
-                    <button type="button" class="btn icon-btn country-btn">
-                        <img src="images/country-icon.png" alt="Country" />
-                    </button>
-                    <div class="dropdown notification-dropdown">
-                        <button class="btn dropdown-toggle icon-btn" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img src="images/notification-icon.svg" alt="Notification" />
-                            <span class="badge"></span>
+                <input type="text" class="form-control" placeholder="Search something here" />
+            </div>
+            <button type="button" class="btn icon-btn search-btn d-none">
+                <img src="images/search-sm-icon.svg" alt="Search" />
+            </button>
+            <div class="dropdown notification-menu mr-1">
+                <button class="btn dropdown-toggle icon-btn" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="images/notification-icon.svg" alt="Notification" />
+                    <span class="badge"></span>
+                </button>
+                <div class="dropdown-menu">
+                    <div class="notification-header">
+                        <h6 class="pb-0">Notification</h6>
+                        <button type="button" class="btn icon-btn notification-btn">
+                            <img src="images/menu-close-icon.svg" alt="Close" />
                         </button>
-                        <div class="dropdown-menu">
-                            <div class="notification-header">
-                                <p>Notification</p>
-                                <a href="#" title="View all" class="primary-link">View all</a>
-                            </div>
-                            <ul class="notification-list">
-                                <li>
-                                    <a href="#" title="Notification">
-                                        <img src="images/user-1.png" alt="User" />
-                                        <div class="content">
-                                            <p class="content-text">Your order is placed at sud asmet.</p>
-                                            <p class="time-text">Oct 3, 2017 9:00 PM</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Notification">
-                                        <img src="images/user-2.png" alt="User" />
-                                        <div class="content">
-                                            <p class="content-text">Order Delivered at sud amsesaaat.</p>
-                                            <p class="time-text">Oct 3, 2017 9:00 PM</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Notification">
-                                        <img src="images/user-3.png" alt="User" />
-                                        <div class="content">
-                                            <p class="content-text">Your order is placed at suud amet.</p>
-                                            <p class="time-text">Oct 3, 2017 9:00 PM</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Notification">
-                                        <img src="images/user-4.png" alt="User" />
-                                        <div class="content">
-                                            <p class="content-text">Your order is placed at suud amet.</p>
-                                            <p class="time-text">Oct 3, 2017 9:00 PM</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Notification">
-                                        <img src="images/user-5.png" alt="User" />
-                                        <div class="content">
-                                            <p class="content-text">Your order is placed at suud amet.</p>
-                                            <p class="time-text">Oct 3, 2017 9:00 PM</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Notification">
-                                        <img src="images/user-1.png" alt="User" />
-                                        <div class="content">
-                                            <p class="content-text">Your order is placed at suud amet.</p>
-                                            <p class="time-text">Oct 3, 2017 9:00 PM</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Notification">
-                                        <img src="images/user-2.png" alt="User" />
-                                        <div class="content">
-                                            <p class="content-text">Your order is placed at suud amet.</p>
-                                            <p class="time-text">Oct 3, 2017 9:00 PM</p>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
-                    <button type="button" class="btn icon-btn">
-                        <img src="images/mail-icon.svg" alt="Mail" />
-                    </button>
-                    <div class="dropdown profile-dropdown">
-                        <button class="btn dropdown-toggle icon-btn" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img src="images/profile-img.png" alt="Profile" />
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#" title="My profile">
-                                    <img src="images/profile-icon.svg" alt="My profile" />
-                                    <span>My profile</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#" title="Support">
-                                    <img src="images/support-icon.svg" alt="Support" />
-                                    <span>Support</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#" title="Change password">
-                                    <img src="images/change-password-icon.svg" alt="Change password" />
-                                    <span>Change password</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="index.html" title="Logout">
-                                    <img src="images/change-password-icon.svg" alt="Logout" />
-                                    <span>Logout</span>
-                                </a>
-                            </li>
-                        </ul>
+                    <ul class="notification-content">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="images/user-img-1.png" alt="User" />
+                                <p class="notification-text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </p>
+                                <p class="time">11:43 AM</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="images/user-img-2.png" alt="User" />
+                                <p class="notification-text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </p>
+                                <p class="time">09:16 AM</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="images/user-img-3.png" alt="User" />
+                                <p class="notification-text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </p>
+                                <p class="time">30 Oct</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="images/user-img-4.png" alt="User" />
+                                <p class="notification-text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </p>
+                                <p class="time">29 Oct</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="images/user-img-5.png" alt="User" />
+                                <p class="notification-text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </p>
+                                <p class="time">28 Oct</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="images/user-img-1.png" alt="User" />
+                                <p class="notification-text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </p>
+                                <p class="time">11:43 AM</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="images/user-img-2.png" alt="User" />
+                                <p class="notification-text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </p>
+                                <p class="time">09:16 AM</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="#" class="footer-link">
+                            See all Notification
+                        </a>
                     </div>
                 </div>
             </div>
+            <div class="dropdown profile-menu">
+                <button class="btn dropdown-toggle profile-btn" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="images/user-profile-img.png" alt="User" />
+                    <div class="profile-content">
+                        <p class="department">Admin</p>
+                        <p class="name">Martin Smith</p>
+                    </div>
+                    <img src="images/profile-down-icon.svg" alt="Down" class="profile-down-icon" />
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="#" title="My Profile">
+                            <img src="images/my-profile-icon.svg" alt="My Profile" />
+                            <p>My Profile</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="index.html" title="Logout">
+                            <img src="images/logout-icon.svg" alt="Logout" />
+                            <p>Logout</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </header>
-        <div class="mobile-search">
-            <input type="text" class="form-control" placeholder="Search" name="search-mobile">
-            <button mat-icon-button color="primary" class="search-icon-btn btn">
-                <img src="images/search-icon.svg" />
-            </button>
-        </div>
-        <div class="search-overlay"></div>
         <!-- Header End -->
 
         <!-- Sidebar Start -->
         <aside class="sidebar">
-            <div class="sidebar-top" data-aos="zoom-in">
-                <a href="#" title="Smart Track" class="logo">
-                    <img src="images/logo.svg" alt="Smart Track" />
-                </a>
-            </div>
-            <ul>
-                <li data-aos="fade-left" data-aos-delay="100">
-                    <a class="nav-link active" title="Dashboard" href="dashboard.html">
-                        <img src="images/dashboard-icon.svg" alt="Dashboard" />
-                        <span>Dashboard</span>
+            <a href="#" title="HexaDash" class="logo" data-aos="zoom-in">
+                <img src="images/logo.svg" alt="HexaDash" />
+            </a>
+            <ul class="nav-list">
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="100">
+                    <a href="dashboard.html" title="Dashboard" class="nav-link active">
+                        <i class="icon-block">
+                            <img src="images/dashboard-default-icon.svg" alt="Dashboard" />
+                            <img src="images/dashboard-active-icon.svg" alt="Dashboard" />
+                        </i>
+                        Dashboard
                     </a>
                 </li>
-                <li data-aos="fade-left" data-aos-delay="200">
-                    <a class="nav-link" title="Orders" href="innerpage.html">
-                        <img src="images/orders-icon.svg" alt="Orders" />
-                        <span>Orders</span>
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="200">
+                    <a href="innerpage.html" title="Innerpage" class="nav-link">
+                        <i class="icon-block">
+                            <img src="images/innerpage-default-icon.svg" alt="Innerpage" />
+                            <img src="images/innerpage-active-icon.svg" alt="Innerpage" />
+                        </i>
+                        Inner Page
                     </a>
                 </li>
-                <li data-aos="fade-left" data-aos-delay="300">
-                    <a class="nav-link" title="Products" href="#">
-                        <img src="images/products-icon.svg" alt="Products" />
-                        <span>Products</span>
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="300">
+                    <a href="#" title="Car Rent" class="nav-link">
+                        <i class="icon-block">
+                            <img src="images/car-rent-default-icon.svg" alt="Car Rent" />
+                            <img src="images/car-rent-active-icon.svg" alt="Car Rent" />
+                        </i>
+                        Car Rent
                     </a>
                 </li>
-                <li data-aos="fade-left" data-aos-delay="400">
-                    <a class="nav-link" title="Reports" href="#">
-                        <img src="images/reports-icon.svg" alt="Reports" />
-                        <span>Reports</span>
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="400">
+                    <a href="#" title="Reimburse" class="nav-link">
+                        <i class="icon-block">
+                            <img src="images/reimburse-default-icon.svg" alt="Reimburse" />
+                            <img src="images/reimburse-active-icon.svg" alt="Reimburse" />
+                        </i>
+                        Reimburse
+                    </a>
+                </li>
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="500">
+                    <a href="#" title="Transactions" class="nav-link">
+                        <i class="icon-block">
+                            <img src="images/transactions-default-icon.svg" alt="Transactions" />
+                            <img src="images/transactions-active-icon.svg" alt="Transactions" />
+                        </i>
+                        Transactions
+                    </a>
+                </li>
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="600">
+                    <a href="#" title="Inbox" class="nav-link">
+                        <i class="icon-block">
+                            <img src="images/inbox-default-icon.svg" alt="Inbox" />
+                            <img src="images/inbox-active-icon.svg" alt="Inbox" />
+                        </i>
+                        Inbox
+                    </a>
+                </li>
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="700">
+                    <a href="#" title="Calendar" class="nav-link">
+                        <i class="icon-block">
+                            <img src="images/calendar-default-icon.svg" alt="Calendar" />
+                            <img src="images/calendar-active-icon.svg" alt="Calendar" />
+                        </i>
+                        Calendar
+                    </a>
+                </li>
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="800">
+                    <a href="#" title="Help" class="nav-link">
+                        <i class="icon-block">
+                            <img src="images/help-default-icon.svg" alt="Help" />
+                            <img src="images/help-active-icon.svg" alt="Help" />
+                        </i>
+                        Help
+                    </a>
+                </li>
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="900">
+                    <a href="#" title="Settings" class="nav-link">
+                        <i class="icon-block">
+                            <img src="images/settings-default-icon.svg" alt="Settings" />
+                            <img src="images/settings-active-icon.svg" alt="Settings" />
+                        </i>
+                        Settings
                     </a>
                 </li>
             </ul>
@@ -199,498 +234,252 @@
         <!-- Sidebar End -->
 
         <main class="main-content">
-            <!-- Page Header Start -->
-            <div class="page-header" data-aos="fade-in">
-                <div class="left-content">
-                    <h5>Good Morning, Anna!</h5>
-                    <p>Here's what's happening with your store today.</p>
+            <h4 class="page-heading" data-aos="fade-in">Dashboard</h4>
+            <div class="row">
+                <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="statistic-card purple">
+                        <i class="icon-block">
+                            <img src="images/revenue-icon.svg" alt="Total Revenue" />
+                        </i>
+                        <div class="content-info">
+                            <p class="label">Total Revenue</p>
+                            <p class="value">$<span class="count-up">12,652</span></p>
+                        </div>
+                        <p class="growth-text increase">+21.6%</p>
+                    </div>
                 </div>
-                <div class="action-wrapper">
-                    <button type="button" class="btn btn-primary">
-                        <img src="images/filter-icon.svg" alt="Filter" />
-                        <span>Filters</span>
-                    </button>
-                    <button type="button" class="btn btn-outline-primary">
-                        <img src="images/export-icon.svg" alt="Export" />
-                        <span>Export</span>
-                    </button>
+                <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="statistic-card blue">
+                        <i class="icon-block">
+                            <img src="images/booking-icon.svg" alt="Total Bookings" />
+                        </i>
+                        <div class="content-info">
+                            <p class="label">Total Bookings</p>
+                            <p class="value"><span class="count-up">860</span></p>
+                        </div>
+                        <p class="growth-text decrease">-8.4%</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="statistic-card orange">
+                        <i class="icon-block">
+                            <img src="images/cars-icon.svg" alt="Total Cars" />
+                        </i>
+                        <div class="content-info">
+                            <p class="label">Total Cars</p>
+                            <p class="value"><span class="count-up">260</span></p>
+                        </div>
+                        <p class="growth-text increase">+22.9%</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-sm-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="statistic-card green">
+                        <i class="icon-block">
+                            <img src="images/vendors-icon.svg" alt="Total Vendors" />
+                        </i>
+                        <div class="content-info">
+                            <p class="label">Total Vendors</p>
+                            <p class="value"><span class="count-up">60</span></p>
+                        </div>
+                        <p class="growth-text increase">+16.3%</p>
+                    </div>
                 </div>
             </div>
-            <!-- Page Header End -->
-
-            <!-- Statistics Start -->
             <div class="row">
-                <div class="col-xl-8 col-xxl-9">
-                    <div class="row">
-                        <div class="col-sm-6 col-lg-4 col-xl-4 order-xl-down-0">
-                            <div class="primary-card" data-aos="fade-up" data-aos-delay="100">
-                                <div class="content-block">
-                                    <p class="heading-text">Your Target is Incomplete</p>
-                                    <div class="content">
-                                        <p>You have completed 55% of given target</p>
-                                        <a href="#" title="Click here" class="primary-link">Click here</a>
-                                    </div>
-                                    <div class="circle">
-                                        <span class="center-text">55%</span>
-                                    </div>
-                                </div>
-                            </div>
+                <div class="col-lg-7 col-xl-8" data-aos="fade-up" data-aos-delay="500">
+                    <div class="card report-chart">
+                        <div class="card-header">
+                            <h5 class="card-heading">Booking Reports</h5>
+                            <select class="year-select" name="years">
+                                <option value="2023">2023</option>
+                                <option value="2023">2022</option>
+                                <option value="2021">2021</option>
+                            </select>
                         </div>
-                        <div class="col-sm-6 col-lg-4 col-xl-4 order-xl-down-2">
-                            <div class="custom-card card p-3 statistic-card blue" data-aos="fade-up"
-                                data-aos-delay="300">
-                                <div class="card-heading">
-                                    <h5>Total Earning</h5>
-                                    <div class="trend">
-                                        <span>+ 4.31 %</span>
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M6.66666 6.94271L9.33333 9.60937L13.138 5.80471L14.6667 7.33337V3.33337H10.6667L12.1953 4.86204L9.33333 7.72404L6.66666 5.05737L1.52866 10.1954L2.47133 11.138L6.66666 6.94271Z"
-                                                fill="#4199F0" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <p class="numbers"><span>$</span><span class="count-up">5,32,542</span></p>
-                                <div class="action-wrapper">
-                                    <a href="#" title="View All" class="primary-link">View All</a>
-                                    <i class="icon-block">
-                                        <img src="images/wallet-icon.svg" alt="Wallet" />
-                                    </i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4 col-xl-4 order-xl-down-3">
-                            <div class="custom-card card p-3 statistic-card purple" data-aos="fade-up"
-                                data-aos-delay="500">
-                                <div class="card-heading">
-                                    <h5>Orders</h5>
-                                    <div class="trend">
-                                        <span>+ 2.31 %</span>
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M6.66666 6.94271L9.33333 9.60937L13.138 5.80471L14.6667 7.33337V3.33337H10.6667L12.1953 4.86204L9.33333 7.72404L6.66666 5.05737L1.52866 10.1954L2.47133 11.138L6.66666 6.94271Z"
-                                                fill="#4199F0" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <p class="numbers"><span>$</span><span class="count-up">52,542</span></p>
-                                <div class="action-wrapper">
-                                    <a href="#" title="View All" class="primary-link">View All</a>
-                                    <i class="icon-block">
-                                        <img src="images/orders-purple-icon.svg" alt="Orders" />
-                                    </i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4 col-xl-4 order-xl-down-1">
-                            <div class="custom-card card p-3 gutter-margin" data-aos="fade-up" data-aos-delay="200">
-                                <div class="card-header pb-3">
-                                    <h5 class="pb-0 title-with-dash">Profit Earned</h5>
-                                    <ul class="legends">
-                                        <li class="light-marron">Sales</li>
-                                        <li class="marron">Earning</li>
-                                    </ul>
-                                </div>
-                                <div class="profit-chart-outer">
-                                    <canvas id="profitEarnedChart" height="100%" width="100%"></canvas>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4 col-xl-4 order-xl-down-4">
-                            <div class="custom-card card p-3 statistic-card green" data-aos="fade-up"
-                                data-aos-delay="400">
-                                <div class="card-heading">
-                                    <h5>Customers</h5>
-                                    <div class="trend">
-                                        <span>+ 9.31 %</span>
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M6.66666 6.94271L9.33333 9.60937L13.138 5.80471L14.6667 7.33337V3.33337H10.6667L12.1953 4.86204L9.33333 7.72404L6.66666 5.05737L1.52866 10.1954L2.47133 11.138L6.66666 6.94271Z"
-                                                fill="#4199F0" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <p class="numbers"><span>$</span><span class="count-up">1,32,542</span></p>
-                                <div class="action-wrapper">
-                                    <a href="#" title="View All" class="primary-link">View All</a>
-                                    <i class="icon-block">
-                                        <img src="images/customers-icon.svg" alt="Customers" />
-                                    </i>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-6 col-lg-4 col-xl-4 order-xl-down-5" data-aos="fade-up" data-aos-delay="600">
-                            <div class="custom-card card p-3 statistic-card dark-yellow">
-                                <div class="card-heading">
-                                    <h5>My Balance</h5>
-                                    <div class="trend">
-                                        <span>+ 7.31 %</span>
-                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path
-                                                d="M6.66666 6.94271L9.33333 9.60937L13.138 5.80471L14.6667 7.33337V3.33337H10.6667L12.1953 4.86204L9.33333 7.72404L6.66666 5.05737L1.52866 10.1954L2.47133 11.138L6.66666 6.94271Z"
-                                                fill="#4199F0" />
-                                        </svg>
-                                    </div>
-                                </div>
-                                <p class="numbers"><span>$</span><span class="count-up">32,542</span></p>
-                                <div class="action-wrapper">
-                                    <a href="#" title="View All" class="primary-link">View All</a>
-                                    <i class="icon-block">
-                                        <img src="images/balance-icon.svg" alt="My Balance" />
-                                    </i>
-                                </div>
+                        <div class="card-body">
+                            <div class="booking-chart-outer">
+                                <canvas id="bookingChart" height="100%" width="100%"></canvas>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-4 col-xxl-3">
-                    <div class="custom-card card p-3 sales-location-card" data-aos="fade-up" data-aos-delay="700">
-                        <div class="card-header pb-2">
-                            <h5 class="pb-0 title-with-dash">Sales by location</h5>
-                            <a href="#" title="View More" class="primary-link">View More</a>
+                <div class="col-lg-5 col-xl-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="card rental-chart">
+                        <div class="card-header">
+                            <h5 class="card-heading">Top 5 Car Rental</h5>
+                            <select class="year-select1" name="years">
+                                <option value="Oct2023">Oct 2023</option>
+                                <option value="Nov2023">Nov 2022</option>
+                                <option value="Dec2021">Dec 2021</option>
+                            </select>
                         </div>
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3671.7030329876457!2d72.49795187500396!3d23.03467351587719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x395e8352e403437b%3A0xdc9d4dae36889fb9!2sTatvaSoft!5e0!3m2!1sen!2sin!4v1712568162513!5m2!1sen!2sin"
-                            width="100%" height="auto" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade" class="map">
-                        </iframe>
+                        <div class="card-body">
+                            <div class="car-rental-chart-outer">
+                                <canvas id="carRentalChart" height="100%" width="100%"></canvas>
+                                <div class="text-outer">
+                                    <p>1820</p><span>Rental Car</span>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <span class="bg-1 color-block"></span>
+                                    <p class="legend-label">Sport Car</p>
+                                    <p class="value">439</p>
+                                </li>
+                                <li>
+                                    <span class="bg-2 color-block"></span>
+                                    <p class="legend-label">SUV</p>
+                                    <p class="value">265</p>
+                                </li>
+                                <li>
+                                    <span class="bg-3 color-block"></span>
+                                    <p class="legend-label">Coupe</p>
+                                    <p class="value">488</p>
+                                </li>
+                                <li>
+                                    <span class="bg-4 color-block"></span>
+                                    <p class="legend-label">Hatchback</p>
+                                    <p class="value">316</p>
+                                </li>
+                                <li>
+                                    <span class="bg-5 color-block"></span>
+                                    <p class="legend-label">Sedan</p>
+                                    <p class="value">312</p>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!-- Statistics End -->
-
-            <div class="row">
-                <!-- Table Start -->
-                <div class="col-xl-8 mb-3 mb-sm-4 mb-xl-0">
-                    <div class="custom-card card p-3 mb-0 h-auto" data-aos="fade-up" data-aos-delay="800">
-                        <div class="card-header pb-2">
-                            <h5 class="pb-0 title-with-dash">Profit Request</h5>
+                <div class="col-xl-8 mb-3 mb-xl-0" data-aos="fade-up" data-aos-delay="700">
+                    <div class="card h-100 mb-0">
+                        <div class="card-header">
+                            <h5 class="card-heading">Booking List</h5>
+                            <button type="button" class="btn btn-outline-secondary">
+                                <img src="images/filter-icon.svg" alt="Filter" />
+                                <span>Filter</span>
+                            </button>
                         </div>
-                        <div class="table-outer">
+                        <div class="card-body">
                             <table class="table" id="datatable1">
                                 <thead>
                                     <tr>
-                                        <th>Product Name</th>
-                                        <th>Type</th>
-                                        <th>Type</th>
+                                        <th>
+                                            Booking ID
+                                        </th>
+                                        <th>Customer Name</th>
+                                        <th>Car Type</th>
+                                        <th>Date</th>
                                         <th>Payment</th>
-                                        <th class="text-center">Order Status</th>
-                                        <th class="text-center">Actions</th>
+                                        <th>Status</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Casual Shoes</td>
-                                        <td>Shoes</td>
-                                        <td>Red</td>
-                                        <td>$499</td>
-                                        <td class="text-center">
-                                            <div class="status success">Accepted</div>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="dropdown primary-dropdown table-dropdown">
-                                                <button class="btn dropdown-toggle icon-btn" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <img src="images/action-icon.svg" alt="Action" />
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Edit">
-                                                            <img src="images/edit-icon.svg" alt="Edit" />
-                                                            <span>Edit</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Delete">
-                                                            <img src="images/delete-icon.svg" alt="Delete" />
-                                                            <span>Delete</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                        <td>#362563</td>
+                                        <td>Jane Cooper</td>
+                                        <td>Lexus LFA</td>
+                                        <td>Sep 26,2023</td>
+                                        <td>$365</td>
+                                        <td>
+                                            <span class="status success">
+                                                Completed
+                                            </span>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Sweat Shirt</td>
-                                        <td>Cloth</td>
-                                        <td>Black</td>
-                                        <td>$99</td>
-                                        <td class="text-center">
-                                            <div class="status danger">Rejected</div>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="dropdown primary-dropdown table-dropdown">
-                                                <button class="btn dropdown-toggle icon-btn" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <img src="images/action-icon.svg" alt="Action" />
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Edit">
-                                                            <img src="images/edit-icon.svg" alt="Edit" />
-                                                            <span>Edit</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Delete">
-                                                            <img src="images/delete-icon.svg" alt="Delete" />
-                                                            <span>Delete</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                        <td>#695865</td>
+                                        <td>Wade Warren</td>
+                                        <td>Ford Mustang</td>
+                                        <td>Sep 26,2023</td>
+                                        <td>$263</td>
+                                        <td>
+                                            <span class="status warning">
+                                                Waiting
+                                            </span>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Jeans</td>
-                                        <td>Cloth</td>
-                                        <td>Blue</td>
-                                        <td>$49</td>
-                                        <td class="text-center">
-                                            <div class="status warning">Pending</div>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="dropdown primary-dropdown table-dropdown">
-                                                <button class="btn dropdown-toggle icon-btn" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <img src="images/action-icon.svg" alt="Action" />
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Edit">
-                                                            <img src="images/edit-icon.svg" alt="Edit" />
-                                                            <span>Edit</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Delete">
-                                                            <img src="images/delete-icon.svg" alt="Delete" />
-                                                            <span>Delete</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                        <td>#362541</td>
+                                        <td>Esther Howard</td>
+                                        <td>Ferrari F40</td>
+                                        <td>Sep 25,2023</td>
+                                        <td>$212</td>
+                                        <td>
+                                            <span class="status danger">
+                                                Canceled
+                                            </span>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Sport Shoes</td>
-                                        <td>Jordan</td>
-                                        <td>Red</td>
-                                        <td>$499</td>
-                                        <td class="text-center">
-                                            <div class="status danger">Rejected</div>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="dropdown primary-dropdown table-dropdown">
-                                                <button class="btn dropdown-toggle icon-btn" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <img src="images/action-icon.svg" alt="Action" />
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Edit">
-                                                            <img src="images/edit-icon.svg" alt="Edit" />
-                                                            <span>Edit</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Delete">
-                                                            <img src="images/delete-icon.svg" alt="Delete" />
-                                                            <span>Delete</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                        <td>#965263</td>
+                                        <td>Cameron Williamson</td>
+                                        <td>Renault Clio V6</td>
+                                        <td>Sep 25,2023</td>
+                                        <td>$180</td>
+                                        <td>
+                                            <span class="status success">
+                                                Completed
+                                            </span>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Oversized Tshirt</td>
-                                        <td>Cloth</td>
-                                        <td>Red</td>
-                                        <td>$499</td>
-                                        <td class="text-center">
-                                            <div class="status success">Accepted</div>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="dropdown primary-dropdown table-dropdown">
-                                                <button class="btn dropdown-toggle icon-btn" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <img src="images/action-icon.svg" alt="Action" />
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Edit">
-                                                            <img src="images/edit-icon.svg" alt="Edit" />
-                                                            <span>Edit</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Delete">
-                                                            <img src="images/delete-icon.svg" alt="Delete" />
-                                                            <span>Delete</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                        <td>#136526</td>
+                                        <td>Leslie Alexander</td>
+                                        <td>Mercedes-Benz</td>
+                                        <td>Sep 25,2023</td>
+                                        <td>$160</td>
+                                        <td>
+                                            <span class="status warning">
+                                                Waiting
+                                            </span>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Sweat Shirt</td>
-                                        <td>Cloth</td>
-                                        <td>Black</td>
-                                        <td>$99</td>
-                                        <td class="text-center">
-                                            <div class="status danger">Rejected</div>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="dropdown primary-dropdown table-dropdown">
-                                                <button class="btn dropdown-toggle icon-btn" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <img src="images/action-icon.svg" alt="Action" />
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Edit">
-                                                            <img src="images/edit-icon.svg" alt="Edit" />
-                                                            <span>Edit</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Delete">
-                                                            <img src="images/delete-icon.svg" alt="Delete" />
-                                                            <span>Delete</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                        <td>#263695</td>
+                                        <td>Jenny Wilson</td>
+                                        <td>Ferrari 250 GT</td>
+                                        <td>Sep 24,2023</td>
+                                        <td>$140</td>
+                                        <td>
+                                            <span class="status success">
+                                                Completed
+                                            </span>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Casual Shoes</td>
-                                        <td>Shoes</td>
-                                        <td>Red</td>
-                                        <td>$499</td>
-                                        <td class="text-center">
-                                            <div class="status success">Accepted</div>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="dropdown primary-dropdown table-dropdown">
-                                                <button class="btn dropdown-toggle icon-btn" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <img src="images/action-icon.svg" alt="Action" />
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Edit">
-                                                            <img src="images/edit-icon.svg" alt="Edit" />
-                                                            <span>Edit</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Delete">
-                                                            <img src="images/delete-icon.svg" alt="Delete" />
-                                                            <span>Delete</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                        <td>#362541</td>
+                                        <td>Esther Howard</td>
+                                        <td>Ferrari F40</td>
+                                        <td>Sep 25,2023</td>
+                                        <td>$212</td>
+                                        <td>
+                                            <span class="status danger">
+                                                Canceled
+                                            </span>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Oversized Tshirt</td>
-                                        <td>Cloth</td>
-                                        <td>Red</td>
-                                        <td>$499</td>
-                                        <td class="text-center">
-                                            <div class="status success">Accepted</div>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="dropdown primary-dropdown table-dropdown">
-                                                <button class="btn dropdown-toggle icon-btn" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <img src="images/action-icon.svg" alt="Action" />
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Edit">
-                                                            <img src="images/edit-icon.svg" alt="Edit" />
-                                                            <span>Edit</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Delete">
-                                                            <img src="images/delete-icon.svg" alt="Delete" />
-                                                            <span>Delete</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                        <td>#362563</td>
+                                        <td>Jane Cooper</td>
+                                        <td>Lexus LFA</td>
+                                        <td>Sep 26,2023</td>
+                                        <td>$365</td>
+                                        <td>
+                                            <span class="status success">
+                                                Completed
+                                            </span>
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td>Sport Shoes</td>
-                                        <td>Jordan</td>
-                                        <td>Red</td>
-                                        <td>$499</td>
-                                        <td class="text-center">
-                                            <div class="status danger">Rejected</div>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="dropdown primary-dropdown table-dropdown">
-                                                <button class="btn dropdown-toggle icon-btn" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <img src="images/action-icon.svg" alt="Action" />
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Edit">
-                                                            <img src="images/edit-icon.svg" alt="Edit" />
-                                                            <span>Edit</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Delete">
-                                                            <img src="images/delete-icon.svg" alt="Delete" />
-                                                            <span>Delete</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>Jeans</td>
-                                        <td>Cloth</td>
-                                        <td>Blue</td>
-                                        <td>$49</td>
-                                        <td class="text-center">
-                                            <div class="status warning">Pending</div>
-                                        </td>
-                                        <td class="text-center">
-                                            <div class="dropdown primary-dropdown table-dropdown">
-                                                <button class="btn dropdown-toggle icon-btn" type="button"
-                                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                                    <img src="images/action-icon.svg" alt="Action" />
-                                                </button>
-                                                <ul class="dropdown-menu dropdown-menu-end">
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Edit">
-                                                            <img src="images/edit-icon.svg" alt="Edit" />
-                                                            <span>Edit</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="dropdown-item" href="#" title="Delete">
-                                                            <img src="images/delete-icon.svg" alt="Delete" />
-                                                            <span>Delete</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
+                                        <td>#362541</td>
+                                        <td>Esther Howard</td>
+                                        <td>Ferrari F40</td>
+                                        <td>Sep 25,2023</td>
+                                        <td>$212</td>
+                                        <td>
+                                            <span class="status danger">
+                                                Canceled
+                                            </span>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -698,48 +487,81 @@
                         </div>
                     </div>
                 </div>
-                <!-- Table Start -->
-
-                <!-- Chart Start -->
-                <div class="col-xl-4">
-                    <div class="custom-card card p-3 mb-0 h-100" data-aos="fade-up" data-aos-delay="900">
-                        <div class="card-header pb-2">
-                            <h5 class="pb-0 title-with-dash">Resolved Complaint</h5>
+                <div class="col-xl-4" data-aos="fade-up" data-aos-delay="800">
+                    <div class="card transaction-card h-100 mb-0">
+                        <div class="card-header">
+                            <h5 class="card-heading">Recent Transactions</h5>
+                            <button type="button" class="btn btn-outline-primary">
+                                <span>View All</span>
+                            </button>
                         </div>
-                        <div class="row align-items-end total-row">
-                            <div class="col-auto">
-                                <div class="total-wrapper">
-                                    <p class="total-text">Total</p>
-                                    <p class="value-text">12,457</p>
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <div class="trend-wrapper">
-                                    <p>+ 3.31 %</p>
-                                    <img src="images/trend-up-icon.svg" alt="Trend" />
-                                </div>
-                            </div>
-                            <div class="col-auto">
-                                <p class="year-text">From Last Year</p>
-                            </div>
-                        </div>
-                        <p>Average Resolved complaints by last year</p>
-                        <button type="button" class="btn btn-primary view-more-btn">
-                            <span>View More</span>
-                        </button>
-                        <div class="complaint-chart-outer">
-                            <canvas id="resolvedComplaintChart" height="100%" width="100%"></canvas>
+                        <div class="card-body">
+                            <ul class="transaction-list">
+                                <li class="transaction-list-item">
+                                    <img src="images/car-1.png" alt="Car" />
+                                    <div class="car-brand">
+                                        <p class="brand-name">Nissan GT - R</p>
+                                        <p class="car-type">Sport Car</p>
+                                    </div>
+                                    <div class="car-value">
+                                        <p class="date">20 July</p>
+                                        <p class="value">$80.00</p>
+                                    </div>
+                                </li>
+                                <li class="transaction-list-item">
+                                    <img src="images/car-2.png" alt="Car" />
+                                    <div class="car-brand">
+                                        <p class="brand-name">Ford Mustang</p>
+                                        <p class="car-type">Sport Car</p>
+                                    </div>
+                                    <div class="car-value">
+                                        <p class="date">20 July</p>
+                                        <p class="value">$60.00</p>
+                                    </div>
+                                </li>
+                                <li class="transaction-list-item">
+                                    <img src="images/car-3.png" alt="Car" />
+                                    <div class="car-brand">
+                                        <p class="brand-name">Rolls - Royce</p>
+                                        <p class="car-type">Sport Car</p>
+                                    </div>
+                                    <div class="car-value">
+                                        <p class="date">20 July</p>
+                                        <p class="value">$160.00</p>
+                                    </div>
+                                </li>
+                                <li class="transaction-list-item">
+                                    <img src="images/car-4.png" alt="Car" />
+                                    <div class="car-brand">
+                                        <p class="brand-name">CR-V</p>
+                                        <p class="car-type">SUV</p>
+                                    </div>
+                                    <div class="car-value">
+                                        <p class="date">20 July</p>
+                                        <p class="value">$40.00</p>
+                                    </div>
+                                </li>
+                                <li class="transaction-list-item">
+                                    <img src="images/car-5.png" alt="Car" />
+                                    <div class="car-brand">
+                                        <p class="brand-name">Mercedes-Benz</p>
+                                        <p class="car-type">Sport Car</p>
+                                    </div>
+                                    <div class="car-value">
+                                        <p class="date">20 July</p>
+                                        <p class="value">$90.00</p>
+                                    </div>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-                <!-- Chart End -->
             </div>
         </main>
 
         <!-- Footer Start -->
         <footer class="footer">
-            <p>Ⓒ Copyright 2022. All Rights Reserved | <a href="#" title="Terms of Use" class="primary-link">Terms
-                    of Use</a></p>
+            <p>V 1.1.0 | Copyright 2023. All rights reserved</p>
         </footer>
         <!-- Footer End -->
     </div>

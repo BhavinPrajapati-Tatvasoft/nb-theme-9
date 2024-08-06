@@ -54,25 +54,30 @@ $(document).ready(function () {
   });
 
   // Hiring Chart
-  let profitEarnedChartCanvas = document.getElementById("profitEarnedChart");
-  if (profitEarnedChartCanvas) {
-    var ctx = profitEarnedChartCanvas.getContext("2d");
+  let bookingChartCanvas = document.getElementById("bookingChart");
+  if (bookingChartCanvas) {
+    var ctx = bookingChartCanvas.getContext("2d");
     var data = {
-      labels: ["S", "M", "T", "W", "T", "F", "S"],
+      labels: [
+        "Jan",
+        "Febr",
+        "Mar",
+        "Apr",
+        "May",
+        "Jun",
+        "Jul",
+        "Aug",
+        "Sep",
+        "Oct",
+        "Nov",
+        "Dec",
+      ],
       datasets: [
         {
-          data: [12, 5, 7, 5, 17, 10, 10, 30],
-          backgroundColor: "#9E333D",
-          borderWidth: 1,
-          borderColor: "transparent",
-          barThickness: 7,
-        },
-        {
-          data: [10, 3, 4, 2, 12, 6, 7],
-          backgroundColor: "#E67B86",
-          borderWidth: 1,
-          borderColor: "transparent",
-          barThickness: 7,
+          data: [65, 38, 58, 42, 45, 72, 55, 50, 48, 65, 35, 55],
+          backgroundColor: "#3563E9",
+          borderRadius: 6,
+          barThickness: 20,
         },
       ],
     };
@@ -86,37 +91,46 @@ $(document).ready(function () {
       scales: {
         x: {
           ticks: {
-            color: "#606060",
+            color: "#262626",
             font: {
               size: 12,
-              lineHeight: "14px",
+              lineHeight: "20px",
             },
-            padding: 3,
+            padding: 8,
           },
           grid: {
             drawTicks: false,
             display: false,
           },
           border: {
-            color: "#BEBEBE",
+            display: false,
           },
         },
         y: {
           ticks: {
-            color: "#606060",
+            color: "#262626",
+            callback: function (value) {
+              if (value === 0) {
+                return value;
+              } else {
+                return value + "K";
+              }
+            },
             font: {
               size: 12,
-              lineHeight: "14px",
+              lineHeight: "20px",
+              family: "'Urbanist', sans-serif",
             },
-            padding: 3,
-            stepSize: 10,
+            padding: 8,
+            stepSize: 20,
           },
           grid: {
             drawTicks: false,
-            display: false,
+            color: "#DEE0E3",
           },
           border: {
             display: false,
+            dash: [4],
           },
         },
       },
@@ -125,7 +139,7 @@ $(document).ready(function () {
         easing: "easeOutSine",
       },
     };
-    var profitEarnedChart = new Chart(ctx, {
+    var bookingChart = new Chart(ctx, {
       type: "bar",
       data: data,
       options: options,
@@ -133,59 +147,34 @@ $(document).ready(function () {
   }
 
   // Resolved Complaint Chart
-  let resolvedComplaintChartCanvas = document.getElementById(
-    "resolvedComplaintChart"
-  );
-  if (resolvedComplaintChartCanvas) {
-    var ctx = resolvedComplaintChartCanvas.getContext("2d");
+  let carRentalChartCanvas = document.getElementById("carRentalChart");
+  if (carRentalChartCanvas) {
+    var ctx = carRentalChartCanvas.getContext("2d");
     var data = {
-      labels: ["1", "2", "3", "4", "5"],
+      labels: ["Sport Car", "SUV", "Coupe", "Hatchback", "Sedan"],
       datasets: [
         {
-          data: [0, 27, 20, 34, 0],
-          fill: true,
-          borderColor: "#9E333D",
+          backgroundColor: [
+            "#123089",
+            "#1E4CD2",
+            "#3563E9",
+            "#7A9BF9",
+            "#BACCFF",
+          ],
+          data: [439, 265, 488, 316, 312],
+          borderAlign: "inner",
+          borderColor: "#fff",
           borderWidth: 1,
-          pointBorderWidth: 0,
-          pointStyle: "line",
-          tension: 0.4,
-          label: "Unlimited Pizza",
-          backgroundColor: "#FF55551B",
+          borderRadius: 5,
         },
       ],
     };
     var options = {
+      cutout: 65,
       maintainAspectRatio: false,
-      layout: {
-        padding: -50,
-      },
       plugins: {
         legend: {
           display: false,
-        },
-      },
-      scales: {
-        x: {
-          ticks: {
-            display: false,
-          },
-          grid: {
-            display: false,
-          },
-          border: {
-            display: false,
-          },
-        },
-        y: {
-          ticks: {
-            display: false,
-          },
-          grid: {
-            display: false,
-          },
-          border: {
-            display: false,
-          },
         },
       },
       animation: {
@@ -193,51 +182,62 @@ $(document).ready(function () {
         easing: "easeOutSine",
       },
     };
-    var resolvedComplaintChart = new Chart(ctx, {
-      type: "line",
+    var carRentalChart = new Chart(ctx, {
+      type: "doughnut",
       data: data,
       options: options,
     });
   }
 
   // Select2
+  $(".year-select").select2({
+    width: "74px",
+    dropdownCssClass: "select-menu",
+    selectionCssClass: "year-select-menu",
+  });
+  $(".year-select1").select2({
+    width: "auto",
+    dropdownCssClass: "select-menu",
+    selectionCssClass: "year-select-menu",
+  });
   $(".custom-select").select2({
     width: "100%",
-    dropdownCssClass: "custom-select-menu",
-    laceholder: "This is my placeholder",
+    dropdownCssClass: "select-menu",
+    selectionCssClass: "custom-select-menu",
   });
 
   // CountUp
-  $(".numbers .count-up").counterUp({
+  $(".value .count-up").counterUp({
     delay: 10,
     time: 1000,
   });
 
   // Datatable
   $("#datatable1").DataTable({
-    sort: false,
+    sort: true,
     filter: false,
-    info: true,
+    info: false,
     autoWidth: false,
     pagingType: "full_numbers",
     order: [[0, ""]],
-    pageLength: 5,
+    pageLength: 6,
     layout: {
       topStart: null,
       top: null,
       topEnd: null,
-      bottomStart: "info",
+      bottomStart: "pageLength",
     },
     language: {
       info: "Showing _START_-_END_ of _TOTAL_ Results",
       paginate: {
-        first: false,
-        last: false,
-        previous:
-          '<img src="images/prev-active-icon.svg" class="active-icon" alt="Prev"/><img src="images/prev-disabled-icon.svg" class="default-icon" alt="Prev"/>',
-        next: '<img src="images/next-active-icon.svg" class="active-icon" alt="Next"/><img src="images/next-disabled-icon.svg" class="default-icon" alt="Next"/>',
+        first: '<img src="images/first-active-icon.svg" alt="First"/>',
+        last: '<img src="images/last-active-icon.svg" alt="Last"/>',
+        previous: '<img src="images/prev-active-icon.svg" alt="Prev"/>',
+        next: '<img src="images/next-active-icon.svg" alt="Next"/>',
       },
+      lengthMenu: "_MENU_ Records per page",
     },
+    lengthMenu: [6, 10, 15],
   });
 
   // Password Toggle
@@ -274,8 +274,11 @@ $(document).ready(function () {
   AOS.init({
     once: true,
     duration: 600,
+    disable: "mobile",
   });
   // Don't add anything below this --------------------------------------------------------------
   // Add Class on Window Load
-  $("body").addClass("page-loaded");
+  setTimeout(function () {
+    $("body").addClass("page-loaded");
+  }, 10);
 });

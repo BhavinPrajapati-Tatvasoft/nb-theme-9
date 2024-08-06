@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Innerpage | ds-theme-18</title>
+    <title>Innerpage | nb-theme-9</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description"
@@ -16,181 +16,216 @@
     <div class="wrapper">
         <!-- Header Start -->
         <header class="header">
-            <div class="header-inner">
-                <button type="button" class="btn icon-btn menu-btn d-inline-block d-xxl-none">
-                    <img src="images/menu-icon.svg" alt="Menu" />
+            <button type="button" class="btn icon-btn menu-btn">
+                <img src="images/menu-icon.svg" alt="Menu" />
+            </button>
+            <div class="search-wrapper">
+                <button type="button" class="btn icon-btn">
+                    <img src="images/search-icon.svg" alt="Search">
                 </button>
-                <a href="#" title="Logo" class="d-xxl-none d-inline-block logo">
-                    <img src="images/mobile-logo.svg" alt="Smart Track" />
-                </a>
-                <div class="search-wrapper">
-                    <input type="text" class="form-control" placeholder="Search here.." id="searchbox" />
-                    <button type="button" class="btn icon-btn">
-                        <img src="images/search-icon.svg" alt="Search">
-                    </button>
-                </div>
-                <div class="action-row">
-                    <button type="button" class="btn icon-btn d-inline-block d-md-none search-btn">
-                        <img src="images/search-icon.svg" alt="Search" />
-                    </button>
-                    <button type="button" class="btn icon-btn country-btn">
-                        <img src="images/country-icon.png" alt="Country" />
-                    </button>
-                    <div class="dropdown notification-dropdown">
-                        <button class="btn dropdown-toggle icon-btn" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img src="images/notification-icon.svg" alt="Notification" />
-                            <span class="badge"></span>
+                <input type="text" class="form-control" placeholder="Search something here" name="search" />
+            </div>
+            <button type="button" class="btn icon-btn search-btn d-none">
+                <img src="images/search-sm-icon.svg" alt="Search" />
+            </button>
+            <div class="dropdown notification-menu mr-1">
+                <button class="btn dropdown-toggle icon-btn" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="images/notification-icon.svg" alt="Notification" />
+                    <span class="badge"></span>
+                </button>
+                <div class="dropdown-menu">
+                    <div class="notification-header">
+                        <h6 class="pb-0">Notification</h6>
+                        <button type="button" class="btn icon-btn notification-btn">
+                            <img src="images/menu-close-icon.svg" alt="Close" />
                         </button>
-                        <div class="dropdown-menu">
-                            <div class="notification-header">
-                                <p>Notification</p>
-                                <a href="#" title="View all" class="primary-link">View all</a>
-                            </div>
-                            <ul class="notification-list">
-                                <li>
-                                    <a href="#" title="Notification">
-                                        <img src="images/user-1.png" alt="User" />
-                                        <div class="content">
-                                            <p class="content-text">Your order is placed at sud asmet.</p>
-                                            <p class="time-text">Oct 3, 2017 9:00 PM</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Notification">
-                                        <img src="images/user-2.png" alt="User" />
-                                        <div class="content">
-                                            <p class="content-text">Order Delivered at sud amsesaaat.</p>
-                                            <p class="time-text">Oct 3, 2017 9:00 PM</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Notification">
-                                        <img src="images/user-3.png" alt="User" />
-                                        <div class="content">
-                                            <p class="content-text">Your order is placed at suud amet.</p>
-                                            <p class="time-text">Oct 3, 2017 9:00 PM</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Notification">
-                                        <img src="images/user-4.png" alt="User" />
-                                        <div class="content">
-                                            <p class="content-text">Your order is placed at suud amet.</p>
-                                            <p class="time-text">Oct 3, 2017 9:00 PM</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Notification">
-                                        <img src="images/user-5.png" alt="User" />
-                                        <div class="content">
-                                            <p class="content-text">Your order is placed at suud amet.</p>
-                                            <p class="time-text">Oct 3, 2017 9:00 PM</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Notification">
-                                        <img src="images/user-1.png" alt="User" />
-                                        <div class="content">
-                                            <p class="content-text">Your order is placed at suud amet.</p>
-                                            <p class="time-text">Oct 3, 2017 9:00 PM</p>
-                                        </div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#" title="Notification">
-                                        <img src="images/user-2.png" alt="User" />
-                                        <div class="content">
-                                            <p class="content-text">Your order is placed at suud amet.</p>
-                                            <p class="time-text">Oct 3, 2017 9:00 PM</p>
-                                        </div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
-                    <button type="button" class="btn icon-btn">
-                        <img src="images/mail-icon.svg" alt="Mail" />
-                    </button>
-                    <div class="dropdown profile-dropdown">
-                        <button class="btn dropdown-toggle icon-btn" type="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img src="images/profile-img.png" alt="Profile" />
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="#" title="My profile">
-                                    <img src="images/profile-icon.svg" alt="My profile" />
-                                    <span>My profile</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#" title="Support">
-                                    <img src="images/support-icon.svg" alt="Support" />
-                                    <span>Support</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#" title="Change password">
-                                    <img src="images/change-password-icon.svg" alt="Change password" />
-                                    <span>Change password</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="index.html" title="Logout">
-                                    <img src="images/change-password-icon.svg" alt="Logout" />
-                                    <span>Logout</span>
-                                </a>
-                            </li>
-                        </ul>
+                    <ul class="notification-content">
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="images/user-img-1.png" alt="User" />
+                                <p class="notification-text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </p>
+                                <p class="time">11:43 AM</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="images/user-img-2.png" alt="User" />
+                                <p class="notification-text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </p>
+                                <p class="time">09:16 AM</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="images/user-img-3.png" alt="User" />
+                                <p class="notification-text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </p>
+                                <p class="time">30 Oct</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="images/user-img-4.png" alt="User" />
+                                <p class="notification-text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </p>
+                                <p class="time">29 Oct</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="images/user-img-5.png" alt="User" />
+                                <p class="notification-text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </p>
+                                <p class="time">28 Oct</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="images/user-img-1.png" alt="User" />
+                                <p class="notification-text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </p>
+                                <p class="time">11:43 AM</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">
+                                <img src="images/user-img-2.png" alt="User" />
+                                <p class="notification-text">
+                                    Lorem ipsum dolor sit amet, consectetur
+                                </p>
+                                <p class="time">09:16 AM</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="text-center">
+                        <a href="#" class="footer-link">
+                            See all Notification
+                        </a>
                     </div>
                 </div>
             </div>
+            <div class="dropdown profile-menu">
+                <button class="btn dropdown-toggle profile-btn" type="button" data-bs-toggle="dropdown"
+                    aria-expanded="false">
+                    <img src="images/user-profile-img.png" alt="User" />
+                    <div class="profile-content">
+                        <p class="department">Admin</p>
+                        <p class="name">Martin Smith</p>
+                    </div>
+                    <img src="images/profile-down-icon.svg" alt="Down" class="profile-down-icon" />
+                </button>
+                <ul class="dropdown-menu">
+                    <li>
+                        <a class="dropdown-item" href="#" title="My Profile">
+                            <img src="images/my-profile-icon.svg" alt="My Profile" />
+                            <p>My Profile</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="index.html" title="Logout">
+                            <img src="images/logout-icon.svg" alt="Logout" />
+                            <p>Logout</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </header>
-        <div class="mobile-search">
-            <input type="text" class="form-control" placeholder="Search" name="search-mobile">
-            <button mat-icon-button color="primary" class="search-icon-btn btn">
-                <img src="images/search-icon.svg" />
-            </button>
-        </div>
-        <div class="search-overlay"></div>
         <!-- Header End -->
 
         <!-- Sidebar Start -->
         <aside class="sidebar">
-            <div class="sidebar-top" data-aos="zoom-in">
-                <a href="#" title="Smart Track" class="logo">
-                    <img src="images/logo.svg" alt="Smart Track" />
-                </a>
-            </div>
-            <ul>
-                <li data-aos="fade-left" data-aos-delay="100">
-                    <a class="nav-link" title="Dashboard" href="dashboard.html">
-                        <img src="images/dashboard-icon.svg" alt="Dashboard" />
-                        <span>Dashboard</span>
+            <a href="#" title="HexaDash" class="logo" data-aos="zoom-in">
+                <img src="images/logo.svg" alt="HexaDash" />
+            </a>
+            <ul class="nav-list">
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="100">
+                    <a href="dashboard.html" title="Dashboard" class="nav-link">
+                        <i class="icon-block">
+                            <img src="images/dashboard-default-icon.svg" alt="Dashboard" />
+                            <img src="images/dashboard-active-icon.svg" alt="Dashboard" />
+                        </i>
+                        Dashboard
                     </a>
                 </li>
-                <li data-aos="fade-left" data-aos-delay="200">
-                    <a class="nav-link active" title="Orders" href="innerpage.html">
-                        <img src="images/orders-icon.svg" alt="Orders" />
-                        <span>Orders</span>
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="200">
+                    <a href="innerpage.html" title="Innerpage" class="nav-link active">
+                        <i class="icon-block">
+                            <img src="images/innerpage-default-icon.svg" alt="Innerpage" />
+                            <img src="images/innerpage-active-icon.svg" alt="Innerpage" />
+                        </i>
+                        Inner Page
                     </a>
                 </li>
-                <li data-aos="fade-left" data-aos-delay="300">
-                    <a class="nav-link" title="Products" href="#">
-                        <img src="images/products-icon.svg" alt="Products" />
-                        <span>Products</span>
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="300">
+                    <a href="#" title="Car Rent" class="nav-link">
+                        <i class="icon-block">
+                            <img src="images/car-rent-default-icon.svg" alt="Car Rent" />
+                            <img src="images/car-rent-active-icon.svg" alt="Car Rent" />
+                        </i>
+                        Car Rent
                     </a>
                 </li>
-                <li data-aos="fade-left" data-aos-delay="400">
-                    <a class="nav-link" title="Reports" href="#">
-                        <img src="images/reports-icon.svg" alt="Reports" />
-                        <span>Reports</span>
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="400">
+                    <a href="#" title="Reimburse" class="nav-link">
+                        <i class="icon-block">
+                            <img src="images/reimburse-default-icon.svg" alt="Reimburse" />
+                            <img src="images/reimburse-active-icon.svg" alt="Reimburse" />
+                        </i>
+                        Reimburse
+                    </a>
+                </li>
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="500">
+                    <a href="#" title="Transactions" class="nav-link">
+                        <i class="icon-block">
+                            <img src="images/transactions-default-icon.svg" alt="Transactions" />
+                            <img src="images/transactions-active-icon.svg" alt="Transactions" />
+                        </i>
+                        Transactions
+                    </a>
+                </li>
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="600">
+                    <a href="#" title="Inbox" class="nav-link">
+                        <i class="icon-block">
+                            <img src="images/inbox-default-icon.svg" alt="Inbox" />
+                            <img src="images/inbox-active-icon.svg" alt="Inbox" />
+                        </i>
+                        Inbox
+                    </a>
+                </li>
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="700">
+                    <a href="#" title="Calendar" class="nav-link">
+                        <i class="icon-block">
+                            <img src="images/calendar-default-icon.svg" alt="Calendar" />
+                            <img src="images/calendar-active-icon.svg" alt="Calendar" />
+                        </i>
+                        Calendar
+                    </a>
+                </li>
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="800">
+                    <a href="#" title="Help" class="nav-link">
+                        <i class="icon-block">
+                            <img src="images/help-default-icon.svg" alt="Help" />
+                            <img src="images/help-active-icon.svg" alt="Help" />
+                        </i>
+                        Help
+                    </a>
+                </li>
+                <li class="nav-item" data-aos="fade-right" data-aos-delay="900">
+                    <a href="#" title="Settings" class="nav-link">
+                        <i class="icon-block">
+                            <img src="images/settings-default-icon.svg" alt="Settings" />
+                            <img src="images/settings-active-icon.svg" alt="Settings" />
+                        </i>
+                        Settings
                     </a>
                 </li>
             </ul>
@@ -199,225 +234,333 @@
         <!-- Sidebar End -->
 
         <main class="main-content">
-            <h5 class="md-heading" data-aos="fade-in">One Column</h5>
-            <div class="form-floating mb-20" data-aos="fade-up" data-aos-delay="100">
-                <input type="text" class="form-control" id="firstName" placeholder="First Name">
-                <label for="firstName">First Name</label>
-            </div>
-            <div class="form-floating mb-20" data-aos="fade-up" data-aos-delay="200">
-                <input type="text" class="form-control" id="lastName" placeholder="Last Name">
-                <label for="lastName">Last Name</label>
-            </div>
-            <div class="form-floating mb-26" data-aos="fade-up" data-aos-delay="300">
-                <textarea name="" id="textarea" rows="4" class="form-control" placeholder="Ready...">Ready...</textarea>
-                <label for="textarea">Comment</label>
-            </div>
-
-            <h5 class="md-heading" data-aos="fade-up" data-aos-delay="400">Two Column</h5>
-            <div class="row mb-6p">
-                <div class="col-sm-6" data-aos="fade-up" data-aos-delay="500">
-                    <div class="form-floating mb-20">
-                        <input type="email" class="form-control" id="email" placeholder="Email" value="Jinni@gmail.com"
-                            autocomplete="email" />
-                        <label for="email">Email</label>
+            <h4 class="page-heading" data-aos="fade-in">Inner Page</h4>
+            <div class="card page-card mb-0 h-100" data-aos="fade-up" data-aos-delay="100">
+                <div class="card-body">
+                    <h5 class="card-heading pb-20">
+                        Form Control
+                    </h5>
+                    <h6 class="section-heading">
+                        One Column
+                    </h6>
+                    <div class="form-group">
+                        <label for="firstname">Firstname</label>
+                        <input type="text" class="form-control" id="firstname" placeholder="Firstname" />
                     </div>
-                </div>
-                <div class="col-sm-6" data-aos="fade-up" data-aos-delay="600">
-                    <div class="form-floating mb-20">
-                        <input type="text" class="form-control" id="accountNumber" placeholder="Account Number">
-                        <label for="accountNumber">Account Number</label>
+                    <div class="form-group">
+                        <label for="lastname">Lastname</label>
+                        <input type="text" class="form-control" id="lastname" placeholder="Lastname" />
                     </div>
-                </div>
-                <div class="col-sm-6" data-aos="fade-up" data-aos-delay="700">
-                    <div class="form-floating mb-20">
-                        <input type="text" class="form-control" id="fullName" placeholder="Full Name">
-                        <label for="fullName">Full Name</label>
+                    <div class="form-group pb-md-2">
+                        <label for="textarea">Textarea</label>
+                        <textarea name="" id="textarea" rows="3" placeholder="Textarea"
+                            class="form-control mb-lg-1"></textarea>
                     </div>
-                </div>
-                <div class="col-sm-6" data-aos="fade-up" data-aos-delay="800">
-                    <div class="form-floating mb-20">
-                        <input type="text" class="form-control" id="occupation" placeholder="Occupation">
-                        <label for="occupation">Occupation</label>
+                    <h6 class="section-heading">
+                        Two Column
+                    </h6>
+                    <div class="row mb-lg-2 pb-md-1">
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="firstname1">Firstname</label>
+                                <input type="text" class="form-control" id="firstname1" placeholder="Firstname" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="lastname1">Lastname</label>
+                                <input type="text" class="form-control" id="lastname1" placeholder="Lastname" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="select1">Select</label>
+                                <select class="custom-select" name="select" id="select1">
+                                    <option value="Option1">Option 1</option>
+                                    <option value="Option2">Option 2</option>
+                                    <option value="Option3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <div class="form-group">
+                                <label for="error1">Error</label>
+                                <input type="text" class="form-control is-invalid" id="error1" placeholder="Error" />
+                                <div class="invalid-feedback">
+                                    Invalid.
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <h5 class="md-heading" data-aos="fade-up" data-aos-delay="900">Three Column</h5>
-            <div class="row mb-6p">
-                <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="1000">
-                    <div class="form-floating mb-20">
-                        <input type="text" class="form-control" id="designation" placeholder="Designation"
-                            value="Senior Manager" />
-                        <label for="designation">Designation</label>
+                    <h6 class="section-heading">
+                        Three Column
+                    </h6>
+                    <div class="row mb-lg-2 pb-md-1">
+                        <div class="col-sm-6 col-md-4">
+                            <div class="form-group">
+                                <label for="firstname3">Firstname</label>
+                                <input type="text" class="form-control" id="firstname3" placeholder="Firstname" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="form-group">
+                                <label for="lastname3">Lastname</label>
+                                <input type="text" class="form-control" id="lastname3" placeholder="Lastname" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="form-group">
+                                <label for="select2">Select</label>
+                                <select class="custom-select" name="select" id="select2">
+                                    <option value="Option1">Option 1</option>
+                                    <option value="Option2">Option 2</option>
+                                    <option value="Option3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Name"
+                                    autocomplete="name" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="form-group">
+                                <label for="select3">Select</label>
+                                <select class="custom-select" name="select" id="select3">
+                                    <option value="Option1">Option 1</option>
+                                    <option value="Option2">Option 2</option>
+                                    <option value="Option3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <div class="form-group">
+                                <label for="error3">Error</label>
+                                <input type="text" class="form-control is-invalid" id="error3" placeholder="Error" />
+                                <div class="invalid-feedback">
+                                    Invalid.
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="1100">
-                    <div class="form-floating mb-20">
-                        <input type="text" class="form-control" id="adhaarCard" placeholder="Adhaar Card" />
-                        <label for="adhaarCard">Adhaar Card</label>
+                    <h6 class="section-heading">Four Column</h6>
+                    <div class="row mb-lg-2 pb-md-1">
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="form-group">
+                                <label for="firstname4">Firstname</label>
+                                <input type="text" class="form-control" id="firstname4" placeholder="Firstname" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="form-group">
+                                <label for="lastname4">Lastname</label>
+                                <input type="text" class="form-control" id="lastname4" placeholder="Lastname" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="form-group">
+                                <label for="select4">Select</label>
+                                <select class="custom-select" name="select" id="select4">
+                                    <option value="Option1">Option 1</option>
+                                    <option value="Option2">Option 2</option>
+                                    <option value="Option3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="form-group">
+                                <label for="select5">Select</label>
+                                <select class="custom-select" name="select" id="select5">
+                                    <option value="Option1">Option 1</option>
+                                    <option value="Option2">Option 2</option>
+                                    <option value="Option3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="form-group">
+                                <label for="name1">Name</label>
+                                <input type="text" class="form-control" id="name1" placeholder="Name" />
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="form-group">
+                                <label for="select6">Select</label>
+                                <select class="custom-select" name="select" id="select6">
+                                    <option value="Option1">Option 1</option>
+                                    <option value="Option2">Option 2</option>
+                                    <option value="Option3">Option 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="form-group">
+                                <label for="name2">Name</label>
+                                <input type="text" class="form-control" id="name2" placeholder="Name" disabled />
+                            </div>
+                        </div>
+                        <div class="col-sm-6 col-md-4 col-lg-3">
+                            <div class="form-group">
+                                <label for="error2">Error</label>
+                                <input type="text" class="form-control is-invalid" id="error2" placeholder="Error" />
+                                <div class="invalid-feedback">
+                                    Invalid.
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-4" data-aos="fade-up" data-aos-delay="1200">
-                    <div class="form-floating mb-20">
-                        <input type="text" class="form-control" id="panCard" placeholder="Pan Card" />
-                        <label for="panCard">Pan Card</label>
-                    </div>
-                </div>
-            </div>
-
-            <h5 class="md-heading" data-aos="fade-up" data-aos-delay="1300">Four Column</h5>
-            <div class="row mb-6p">
-                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="1400">
-                    <div class="form-floating mb-20">
-                        <input type="text" class="form-control" id="designation1" placeholder="Designation"
-                            value="Senior Manager" />
-                        <label for="designation1">Designation</label>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="1500">
-                    <div class="form-floating mb-20">
-                        <input type="text" class="form-control" id="adhaarCard1" placeholder="Adhaar Card" />
-                        <label for="adhaarCard1">Adhaar Card</label>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="1600">
-                    <div class="form-floating mb-20">
-                        <input type="text" class="form-control" id="panCard1" placeholder="Pan Card" />
-                        <label for="panCard1">Pan Card</label>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3" data-aos="fade-up" data-aos-delay="1700">
-                    <div class="form-floating mb-20">
-                        <input type="text" class="form-control" id="panCard2" placeholder="Pan Card" />
-                        <label for="panCard2">Pan Card</label>
-                    </div>
-                </div>
-            </div>
-            <h5 class="md-heading other-title" data-aos="fade-up" data-aos-delay="100">Other Elements</h5>
-            <div data-aos="fade-up" data-aos-delay="200">
-                <h6 class="pb-3">File Upload</h6>
-                <div class="upload-outer">
-                    <div class="upload-btn">
-                        <div class="file-upload">
-                            <img src="images/upload-white-icon.svg" alt="Upload">
+                    <h5 class="card-heading pb-4">
+                        Other From Elements
+                    </h5>
+                    <h6 class="section-heading">
+                        File Upload
+                    </h6>
+                    <div class="file-upload-outer">
+                        <div class="upload-btn">
+                            <input type="file" />
+                            <img src="images/file-upload-icon.svg" alt="Upload" />
                             <span>Upload</span>
                         </div>
-                        <input type="file" />
+                        <p>No File Selected</p>
                     </div>
-                    <p>No Item Selected</p>
-                </div>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="100">
-                <h6 class="pb-2 mb-1">Radio Button</h6>
-                <div class="radio-grp">
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioOption" id="radio1" checked="">
-                        <label class="form-check-label" for="radio1">
-                            Option 1
-                        </label>
+                    <h6 class="section-heading">
+                        Checkbox
+                    </h6>
+                    <div class="checkbox-outer">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="option1" checked />
+                            <label class="form-check-label" for="option1">
+                                Check 1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="Option2" />
+                            <label class="form-check-label" for="Option2">
+                                Check 2
+                            </label>
+                        </div>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="radioOption" id="radio2">
-                        <label class="form-check-label" for="radio2">
-                            Option 2
-                        </label>
+                    <h6 class="section-heading">
+                        Radio Button
+                    </h6>
+                    <div class="radio-grp">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioOption" id="radio1" checked />
+                            <label class="form-check-label" for="radio1">
+                                Option 1
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="radioOption" id="radio2" />
+                            <label class="form-check-label" for="radio2">
+                                Option 2
+                            </label>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="200">
-                <h6 class="pb-2 mb-1">Checkbox</h6>
-                <div class="checkbox-outer">
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="option1" checked="">
-                        <label class="form-check-label" for="option1">
-                            Option 1
-                        </label>
+                    <h6 class="section-heading">
+                        Buttons
+                    </h6>
+                    <div class="btn-grp">
+                        <button type="button" class="btn btn-primary">
+                            <span>Primary</span>
+                        </button>
+                        <button type="button" class="btn btn-outline-primary">
+                            <span>Secondary</span>
+                        </button>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="Option2">
-                        <label class="form-check-label" for="Option2">
-                            Option 2
-                        </label>
+                    <h6 class="section-heading">
+                        Snackbar
+                    </h6>
+                    <div class="row pb-lg-2 mb-1">
+                        <div class="col-md-6">
+                            <div class="alert alert-success alert-dismissible" role="alert">
+                                <span>This is a success message</span>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-info alert-dismissible" role="alert">
+                                <span>This is a info message</span>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="alert alert-warning alert-dismissible" role="alert">
+                                <span>This is a warning message</span>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="alert alert-danger alert-dismissible" role="alert">
+                                <span>This is a error message</span>
+                                <button type="button" class="btn-close" data-bs-dismiss="alert"
+                                    aria-label="Close"></button>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="300">
-                <h6 class="pb-2 mb-1">Toggle button</h6>
-                <div class="toggle-outer">
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="offSwitch">
-                        <label class="form-check-label" for="offSwitch">Off</label>
-                    </div>
-                    <div class="form-check form-switch">
-                        <input class="form-check-input" type="checkbox" role="switch" id="onSwitch" checked="">
-                        <label class="form-check-label" for="onSwitch">On</label>
-                    </div>
-                </div>
-            </div>
-            <h6 class="pb-3" data-aos="fade-up" data-aos-delay="400">Snack bar</h6>
-            <div class="alert-outer">
-                <div class="alert alert-success alert-dismissible" role="alert" data-aos="fade-up" data-aos-delay="500">
-                    <img src="images/success-icon.svg" alt="Success">
-                    <span>This is a success message</span>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-                <div class="alert alert-info alert-dismissible" role="alert" data-aos="fade-up" data-aos-delay="600">
-                    <img src="images/info-icon.svg" alt="Info">
-                    <span>This is an info message</span>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-                <div class="alert alert-warning alert-dismissible" role="alert" data-aos="fade-up" data-aos-delay="700">
-                    <img src="images/warning-icon.svg" alt="Warning">
-                    <span>This is an alert message</span>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-                <div class="alert alert-danger alert-dismissible" role="alert" data-aos="fade-up" data-aos-delay="800">
-                    <img src="images/error-icon.svg" alt="Danger">
-                    <span>This is an error message</span>
-                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                </div>
-            </div>
-            <div data-aos="fade-up" data-aos-delay="900">
-                <h6 class="pb-3">Tabs</h6>
-                <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link active" id="pills-tab1-tab" data-bs-toggle="pill"
-                            data-bs-target="#pills-tab1" type="button" role="tab" aria-controls="pills-tab1"
-                            aria-selected="true">Tab 1</button>
-                    </li>
-                    <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="pills-tab2-tab" data-bs-toggle="pill" data-bs-target="#pills-tab2"
-                            type="button" role="tab" aria-controls="pills-tab2" aria-selected="false">Tab 2</button>
-                    </li>
-                </ul>
-                <div class="tab-content" id="pills-tabContent">
-                    <div class="tab-pane fade show active" id="pills-tab1" role="tabpanel"
-                        aria-labelledby="pills-tab1-tab" tabindex="0">
-                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so
-                            beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire,
-                            that they cannot foresee the pain and trouble that are bound to ensue; and equal blame
-                            belongs to those who fail in their duty through weakness of will, which is the same as
-                            saying through shrinking from toil and pain.</p>
-                        <p>On the other hand, we denounce with righteous indignation and dislike men who are so
-                            beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire.
-                        </p>
-                    </div>
-                    <div class="tab-pane fade" id="pills-tab2" role="tabpanel" aria-labelledby="pills-tab2-tab"
-                        tabindex="0">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda aperiam
-                            consequatur voluptatem, eos earum quasi at velit eum ea odit.Lorem ipsum dolor sit amet
-                            consectetur adipisicing elit. Assumenda aperiam consequatur voluptatem, eos earum quasi
-                            at velit eum ea odit.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed, iste.</p>
+                    <h6 class="section-heading">
+                        Tabs
+                    </h6>
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-tab1-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-tab1" type="button" role="tab" aria-controls="pills-tab1"
+                                aria-selected="true"><span>Tab 1</span></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-tab2-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-tab2" type="button" role="tab" aria-controls="pills-tab2"
+                                aria-selected="false"><span>Tab 2</span></button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-tab3-tab" data-bs-toggle="pill"
+                                data-bs-target="#pills-tab3" type="button" role="tab" aria-controls="pills-tab3"
+                                aria-selected="false"><span>Tab 3</span></button>
+                        </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                        <div class="tab-pane fade show active" id="pills-tab1" role="tabpanel"
+                            aria-labelledby="pills-tab1-tab" tabindex="0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum nisi, cras non congue
+                                amet, eu interdum. Purus vulputate odio eget curabitur porttitor tempus ipsum. Amet
+                                risus aenean tortor sed lacus, nunc. Velit semper ullamcorper at tortor pellentesque
+                                augue vehicula sed viverra. Quam sit adipiscing egestas etiam nunc adipiscing non luctus
+                                cursus. Pretium nunc, scelerisque mauris aliquet vulputate erat. Sem condimentum nullam
+                                pharetra ac sagittis. Vel nulla sed in pharetra. Sit mauris id id nascetur. Sem gravida
+                                euismod ac convallis.</p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-tab2" role="tabpanel" aria-labelledby="pills-tab2-tab"
+                            tabindex="0">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bibendum nisi, cras non congue
+                                amet, eu interdum. Purus vulputate odio eget curabitur porttitor tempus ipsum. Amet
+                                risus aenean tortor sed lacus, nunc. Velit semper ullamcorper at tortor pellentesque
+                                augue vehicula sed viverra.</p>
+                            <p>Purus vulputate odio eget curabitur porttitor tempus ipsum. Amet risus aenean tortor sed
+                                lacus, nunc. Velit semper ullamcorper at tortor pellentesque augue vehicula sed viverra.
+                            </p>
+                        </div>
+                        <div class="tab-pane fade" id="pills-tab3" role="tabpanel" aria-labelledby="pills-tab3-tab"
+                            tabindex="0">
+                            <p>Purus vulputate odio eget curabitur porttitor tempus ipsum. Amet risus aenean tortor sed
+                                lacus, nunc. Velit semper ullamcorper at tortor pellentesque augue vehicula sed viverra.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
         </main>
 
+        <!-- Footer Start -->
         <footer class="footer">
-            <p>Ⓒ Copyright 2022. All Rights Reserved | <a href="#" title="Terms of Use" class="primary-link">Terms
-                    of Use</a></p>
+            <p>V 1.1.0 | Copyright 2023. All rights reserved</p>
         </footer>
+        <!-- Footer End -->
     </div>
 
     <!-- JavaScripts -->
